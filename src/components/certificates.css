@@ -1,0 +1,54 @@
+#certificates {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow certificates to wrap to multiple lines */
+    justify-content: center;
+    background-image: linear-gradient(to right, #282c34, #c8d0e2);
+    color: white;
+   /* Adjust for header and footer heights */
+    margin-bottom: 80px; /* Adjust for footer height */
+  }
+  
+  .certificate-item {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #282c34ab;
+    border: none;
+    display: flex; /* Allow stacking elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .certificate-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center the text */
+  }
+  
+  .certificate-description {
+    margin-bottom: 1rem;
+  }
+  
+  .certificate-link {
+    display: inline-block; /* Display as an inline block element */
+    padding: 0.5rem 1rem; /* Add padding for a button-like appearance */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: auto; /* Align button to bottom */
+  }
+  
+  .certificate-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .c {
+    margin-top: 60px;
+  }

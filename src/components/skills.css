@@ -1,0 +1,36 @@
+#skills {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap to multiple lines */
+    justify-content: center;
+    background-image: linear-gradient(to right, #282c34, #c8d0e2);
+    margin-top: 81px;
+  }
+  
+  .skill {
+    width: 225px; /* Adjust width as needed */
+    height: 230px; /* Adjust height as needed */
+    margin: 10px 30px;
+    border: 2px solid #ccc; /* Border around the skill box */
+    border-radius: 12px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .skill:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    cursor: pointer;
+  }
+  
+  .skill-logo {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .skill-name {
+    text-align: center;
+  }

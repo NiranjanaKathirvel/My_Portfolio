@@ -1,0 +1,76 @@
+#home {
+  padding: 2rem;
+  min-height: calc(100vh - 140px); /* Adjust for header and footer */
+  display: flex;
+  background-image: linear-gradient(to right, #282c34, #c8d0e2);
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.home-text {
+  flex: 1;
+  padding-right: 2rem;
+  color: white;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .home-content {
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+
+  .home-text {
+      padding-right: 0;
+      padding-top: 2rem;
+  }
+
+  .home-image img {
+      max-width: 200px;
+  }
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  0% { width: 0; }
+  70% { width: 100%; }
+  85% { width: 100%; }
+  100% { width: 0; }
+}
+
+.typewriter {
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(40, end) infinite;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  .typewriter {
+      font-size: 1.5rem;
+  }
+}
