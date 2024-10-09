@@ -13,39 +13,39 @@ import web from '../web.webp'
 const Skills = () => {
     return (
         <section id="skills">
+            <div className='skills-container'>
+                <div className="skill">
+                    <img className="skill-logo" src={img1} alt="Your Name" style={{ width: '100%', height: '100%' }} />
 
-            <div className="skill">
-                <img className="skill-logo" src={img1} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={img2} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={js} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={react} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={java} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={python} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={laravel} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={sql} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={front} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
+                <div className="skill">
+                    <img className="skill-logo" src={web} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                </div>
             </div>
-            <div className="skill">
-                <img className="skill-logo" src={img2} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={js} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={react} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={java} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={python} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={laravel} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={sql} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={front} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-            <div className="skill">
-                <img className="skill-logo" src={web} alt="Your Name" style={{ width: '100%', height: '100%' }} />
-            </div>
-
         </section>
     );
 };
