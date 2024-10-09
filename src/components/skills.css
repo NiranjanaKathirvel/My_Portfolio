@@ -1,36 +1,80 @@
 #skills {
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap; /* Allow skills to wrap to multiple lines */
-    justify-content: center;
-    background-image: linear-gradient(to right, #282c34, #c8d0e2);
-    margin-top: 81px;
-  }
-  
+  padding-top: calc(85px + 2rem);
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start; /* Align items to the top */
+  background-image: linear-gradient(to right, #282c34, #c8d0e2);
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 4rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Use gap for consistent spacing */
+  width: 100%;
+  padding-bottom: 104px; /* Add padding at the bottom to prevent overlap with footer */
+}
+
+.skill {
+  width: calc(20% - 20px); /* Adjust for 5 items per row */
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.skill-logo {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1200px) {
   .skill {
-    width: 225px; /* Adjust width as needed */
-    height: 230px; /* Adjust height as needed */
-    margin: 10px 30px;
-    border: 2px solid #ccc; /* Border around the skill box */
-    border-radius: 12px; /* Rounded corners */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+    width: calc(25% - 20px); /* 4 items per row */
   }
-  
-  .skill:hover {
-    transform: scale(1.1); /* Enlarge on hover */
-    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .skill {
+    width: calc(33.33% - 20px); /* 3 items per row */
   }
-  
-  .skill-logo {
-    width: 50px; /* Adjust logo size */
-    height: 50px;
-    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #skills {
+    padding-top: calc(80px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  
-  .skill-name {
-    text-align: center;
+  .skill {
+    width: calc(50% - 20px); /* 2 items per row */
   }
+}
+
+@media (max-width: 480px) {
+  .skill {
+    width: calc(100% - 20px); /* 1 item per row */
+    max-width: 180px;
+  }
+}
