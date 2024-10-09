@@ -8,9 +8,8 @@
   justify-content: center;
   align-content: flex-start; /* Align items to the top */
   background-image: linear-gradient(to right, #282c34, #c8d0e2);
-  min-height: 100vh;
-  overflow-y: auto;
-  padding-bottom: 4rem;
+  min-height: calc(100vh - 80px); /* Adjust for header and footer heights */
+  margin-bottom: 80px;
 }
 
 .skills-container {
