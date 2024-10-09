@@ -1,51 +1,63 @@
 #education {
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap; /* Allow projects to wrap to multiple lines */
-    justify-content: center;
-    background-image: linear-gradient(to right, #282c34, #c8d0e2);
-    color: white;
-    /* Adjust for header and footer heights */
-    margin-bottom: 80px; /* Adjust for footer height */
+  padding-top: calc(60px + 2rem);
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #282c34, #c8d0e2);
+  color: white;
+  min-height:100vh;
+  overflow-y: auto;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.e {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.education-container {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.education-item {
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #282c34ab;
+}
+
+.institution-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.degree, .graduation-year {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  #education {
+    padding-top: calc(80px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  
+
   .education-item {
-    width: 100%;
-    height: auto;
-    margin: 10px 0px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: #282c34ab;
-    border: none;
-    cursor: pointer;
+    padding: 0.5rem;
   }
-  
-  .education-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    text-align: center; /* Center the text */
-  }
-  
-  .education-description {
-    margin-bottom: 1rem;
-  }
-  
-  .education-link {
-    display: inline-block; /* Display as an inline block element */
-    padding: 0.5rem 1rem; /* Add padding for a button-like appearance */
-    border: 2px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .education-link:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .e {
-    margin-top: 4%;
-  }
+}
