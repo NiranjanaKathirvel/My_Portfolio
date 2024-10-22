@@ -26,7 +26,7 @@ const Header = ({ setActiveSection }) => {
                     <li><a href="#home" onClick={() => handleNavClick('home')}>Home</a></li>
                     <li><a href="#projects" onClick={() => handleNavClick('projects')}>Projects</a></li>
                     <li><a href="#skills" onClick={() => handleNavClick('skills')}>Skills</a></li>
-                    <li><a href="https://drive.google.com/file/d/1lTzErM0iXSxz8KuJKDnQ1pwbHqnQ6wQb/view?usp=sharing" target="" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1uNf9M-REUd028tp7LXj3O_uHQ_2dlEWE/view?usp=drive_link" target="" rel="noopener noreferrer">ResumeCV</a></li>
                     <li><a href="#education" onClick={() => handleNavClick('education')}>Education</a></li>
                     <li><a href="#certificates" onClick={() => handleNavClick('certificates')}>Certificates</a></li>
                 </ul>
