@@ -10,6 +10,7 @@ import laravel from '../laravel.png'
 import sql from '../sql.webp'
 import front from '../front.jpg'
 import web from '../web.webp'
+import figma from '../figma.png'
 const Skills = () => {
     return (
         <section id="skills">
