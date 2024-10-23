@@ -46,7 +46,7 @@ const Skills = () => {
                     <img className="skill-logo" src={web} alt="Your Name" style={{ width: '100%', height: '100%' }} />
                 </div>
                 <div className="skill">
-                    <img className="skill-logo" src={figma} alt="Your Name" style={{ width: '100%', height: '100%' }} />
+                    <img className="skill-logo" src={figma.png} alt="Your Name" style={{ width: '100%', height: '100%' }} />
                 </div>
             </div>
         </section>
