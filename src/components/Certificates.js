@@ -37,7 +37,7 @@ const Certificates = () => {
         <div className="certificate-item">
           <h3 className="certificate-title">Internship Certificate </h3>
           <p className="certificate-description">
-            Completed in virtual mode  through Coursera on June 2023 to july 2023 and issued by Exposys Data Labs.
+            Completed in virtual mode from June 2023 to july 2023 and issued by Exposys Data Labs.
           </p>
           <a className="certificate-link" href="https://drive.google.com/file/d/1nqg4KPZQD52pCyHCOLo2syKhQ0QZoUCp/view?usp=sharing" target="" rel="noopener noreferrer" >
             View Certificate
